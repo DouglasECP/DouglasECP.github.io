@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Página oficial do jogo Android Pilha Maluca, desenvolvido pelo Mada App Studio." />
+    <title>Pilha Maluca — Mada App Studio</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #071827;
+        color: #f4f7ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 88% 8%, rgba(81, 154, 255, .22), transparent 28rem),
+          radial-gradient(circle at 7% 82%, rgba(238, 78, 164, .14), transparent 25rem),
+          #071827;
+      }
+      main { width: min(820px, calc(100% - 36px)); padding: 48px 0; }
+      .card {
+        padding: clamp(28px, 7vw, 58px);
+        border: 1px solid rgba(137, 185, 239, .24);
+        border-radius: 28px;
+        background: linear-gradient(145deg, rgba(23, 61, 94, .96), rgba(10, 30, 49, .96));
+        box-shadow: 0 26px 90px rgba(0, 0, 0, .46);
+      }
+      .eyebrow { color: #73d6ff; font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+      h1 { margin: 14px 0 18px; font-size: clamp(2.5rem, 9vw, 5.4rem); line-height: .95; letter-spacing: -.05em; }
+      p { max-width: 65ch; color: #cbd8ea; font-size: 1.08rem; line-height: 1.72; }
+      nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+      a { color: #071827; text-decoration: none; padding: 12px 18px; border-radius: 999px; background: #73d6ff; font-weight: 800; }
+      a.secondary { color: #f4f7ff; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .16); }
+      footer { margin-top: 22px; color: #91a5bf; font-size: .9rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <div class="eyebrow">Mada App Studio</div>
+        <h1>Pilha Maluca</h1>
+        <p>Um jogo Android de quebra-cabeça físico: solte objetos, una pares iguais e tente manter a pilha abaixo da linha do perigo enquanto busca novos recordes.</p>
+        <nav aria-label="Links principais">
+          <a href="privacy.html">Política de Privacidade</a>
+          <a class="secondary" href="mailto:madaappstudio@gmail.com">Suporte</a>
+          <a class="secondary" href="../index.html">Mada App Studio</a>
+        </nav>
+      </section>
+      <footer>© 2026 Mada App Studio</footer>
+    </main>
+  </body>
+</html>
