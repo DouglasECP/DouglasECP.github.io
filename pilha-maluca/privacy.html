@@ -38,15 +38,15 @@
       <a class="back" href="../index.html">← Mada App Studio</a>
       <div class="eyebrow">Privacidade e transparência</div>
       <h1>Política de Privacidade — Pilha Maluca</h1>
-      <p class="meta">Última atualização: 25 de agosto de 2026.</p>
+      <p class="meta">Última atualização: 3 de outubro de 2026.</p>
 
       <div class="panel">
         <strong>Resumo:</strong>
-        <p>O Pilha Maluca não exige conta e mantém o progresso no aparelho. O jogo usa Google AdMob/UMP para publicidade e consentimento; esses serviços podem tratar dados técnicos e de interação conforme descrito abaixo.</p>
+        <p>O Pilha Maluca mantém o progresso no aparelho. A partir da versão de produção 0.4.17, a conexão ao Google Play Games permite participar dos rankings por fase com seu perfil de jogador. Jogar localmente continua possível sem essa conexão. O jogo também usa Google AdMob/UMP para publicidade e consentimento.</p>
       </div>
 
       <h2>1. Responsável e aplicação</h2>
-      <p>Esta Política de Privacidade descreve como a Mada App Studio trata dados no jogo Android <strong>Pilha Maluca</strong> (<code>com.douglasecp.pilhamaluca</code>). O jogo não exige cadastro, não oferece conta de usuário e não possui servidor próprio para armazenar progresso.</p>
+      <p>Esta Política de Privacidade descreve como a Mada App Studio trata dados no jogo Android <strong>Pilha Maluca</strong> (<code>com.douglasecp.pilhamaluca</code>). Não há cadastro próprio nem servidor próprio de progresso. A autenticação dos rankings é fornecida pelo Google Play Games. As versões anteriores a 0.4.17 e as versões de desenvolvimento não integram esse ranking.</p>
 
       <h2>2. Dados mantidos no aparelho</h2>
       <p>O Pilha Maluca armazena localmente, no espaço privado do aplicativo:</p>
@@ -57,6 +57,12 @@
         <li>preferências de música, efeitos sonoros e vibração.</li>
       </ul>
       <p>Esses dados servem apenas para manter a experiência e o progresso entre sessões. Eles não são enviados a servidor próprio. Podem ser removidos pela limpeza dos dados nas configurações do Android ou pela desinstalação.</p>
+      <p>Nas versões com ranking, uma fila local separada guarda o identificador do jogador no Play Games, a fase e as maiores pontuações elegíveis ainda pendentes ou já confirmadas. Ela permite repetir envios após falhas de conexão, sem misturar contas.</p>
+
+      <h2>2.1. Ranking e Google Play Games</h2>
+      <p>Com uma conta conectada, o jogo consulta o identificador e o nome público do jogador, envia sua maior pontuação elegível de cada fase ao Google e consulta os placares. Participam apenas novas partidas iniciadas com a conta conectada após a atualização; recordes locais antigos não são importados. O envio não exige concluir a meta da fase.</p>
+      <p>O nome de jogador, a posição e o recorde podem aparecer para outros jogadores no placar público, respeitando a visibilidade do perfil escolhida no Play Games. O jogo não recebe sua senha Google nem solicita seu e-mail, lista de amigos ou avatar para essa interface. A conexão pode ocorrer automaticamente conforme as preferências de login do Play Games.</p>
+      <p>O SDK do Play Games também trata identidade de jogador, dados de análise e diagnóstico para operar e melhorar o serviço. As transmissões usam HTTPS. Consulte a <a href="https://developer.android.com/games/pgs/data-collection?hl=pt-br">divulgação de dados do Google Play Games</a>. O recurso de jogos salvos está desativado: fases desbloqueadas, Ingressos e preferências não são sincronizados pela integração de ranking.</p>
 
       <h2>3. Publicidade, consentimento e dados tratados pelo Google</h2>
       <p>O jogo usa Google AdMob para anúncios premiados e intersticiais e a Google User Messaging Platform (UMP) para consentimento quando aplicável. Segundo a divulgação oficial do Google Mobile Ads SDK, o SDK pode coletar e compartilhar automaticamente:</p>
@@ -71,14 +77,15 @@
       <p>Consulte também a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> e a <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">divulgação de dados do Google Mobile Ads SDK</a>.</p>
 
       <h2>4. Compartilhamento</h2>
-      <p>A Mada App Studio não vende dados pessoais e não recebe o progresso local do jogador. Os dados descritos na seção de publicidade podem ser coletados ou compartilhados com o Google por meio do AdMob/UMP para as finalidades informadas. O tratamento desses dados pelo Google segue suas políticas, configurações, retenção e controles aplicáveis.</p>
+      <p>A Mada App Studio não vende dados pessoais e não recebe o progresso local do jogador. O Google trata os dados de publicidade por meio do AdMob/UMP e os dados de ranking por meio do Play Games para as finalidades descritas nesta política. Nome público e recorde ficam visíveis no placar conforme as configurações de privacidade do perfil. O tratamento pelo Google segue suas políticas, retenção e controles aplicáveis.</p>
 
       <h2>5. Permissões e conectividade</h2>
-      <p>O aplicativo utiliza acesso à internet e ao estado da rede exclusivamente para anúncios, consentimento e verificação da disponibilidade de serviços online. A vibração é usada somente quando habilitada nas preferências do jogo.</p>
+      <p>O aplicativo utiliza acesso à internet e ao estado da rede para anúncios, consentimento, autenticação, rankings e verificação da disponibilidade de serviços online. A vibração é usada somente quando habilitada nas preferências do jogo.</p>
       <p>O app não solicita acesso a câmera, microfone, contatos, arquivos pessoais ou localização precisa. As partidas e o progresso local continuam disponíveis offline enquanto houver Ingressos; as ações que dependem de anúncio exigem conexão.</p>
 
       <h2>6. Segurança, retenção e exclusão</h2>
-      <p>O progresso e as preferências ficam no armazenamento privado do aplicativo e o backup Android está desativado. Esses dados permanecem até que o jogador limpe os dados do app ou o desinstale. Como não existe conta nem servidor próprio de progresso, não há cadastro remoto a ser excluído pela Mada App Studio.</p>
+      <p>O progresso, as preferências e a fila de ranking ficam no armazenamento privado do aplicativo e o backup Android está desativado. Os dados locais permanecem até que o jogador limpe os dados do app ou o desinstale. A remoção local não apaga automaticamente pontuações já enviadas ao Google.</p>
+      <p>Para remover dados remotos, use os controles do Play Games para <a href="https://support.google.com/googleplay/answer/9130646?hl=pt-BR">excluir os dados deste jogo ou o perfil do Play Games</a>. Para evitar novos envios ou reenvio de pendências locais após a exclusão, desative também o login automático do jogo no Play Games e remova os dados locais do aplicativo. Não existe cadastro próprio da Mada App Studio a excluir.</p>
       <p>Os dados tratados pelo Google seguem os prazos, controles e meios de exclusão informados nas políticas e configurações da conta Google. Nenhum sistema é totalmente imune a riscos; recomendamos manter o Android atualizado e proteger o acesso ao aparelho.</p>
 
       <h2>7. Público-alvo</h2>
